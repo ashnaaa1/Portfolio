@@ -1,177 +1,341 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
-
 <head>
-    <meta charset="utf-8">
-    <title> Personal Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7100777403296532"
-     crossorigin="anonymous"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
 
-     
-    <!-- Template Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
 
-    <!-- Template CSS Files -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/preloader.min.css" rel="stylesheet">
-    <link href="css/circle.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
 
-    <!-- CSS Skin File -->
-    <link href="css/skins/yellow.css" rel="stylesheet">
 
-    <!-- Live Style Switcher - demo only -->
-    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
-    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
-    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
-    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
-    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
-    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
-    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
-    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
-    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
-    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
-
-    <!-- Modernizr JS File -->
-    <script src="js/modernizr.custom.js"></script>
+    <title>Portfolio Website</title>
 </head>
+<script>
+  const virtualMemorySwiper = new Swiper(".virtualMemorySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+<body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="#">ASHNA</a></div>
+            <ul>
+                <li><a href="#About">Home</a></li>
+                <li><a href="#Qualifications">Qualifications</a></li>
+                <li><a href="#projects" >Projects</a></li>
+                <li><a href="#SignUp" class="signup-link">Sign Up</a></li>
 
-<body class="home">
-<!-- Live Style Switcher Starts - demo only -->
-<div id="switcher" class="">
-    <div class="content-switcher">
-        <h4>STYLE SWITCHER</h4>
-        <ul>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
-            </li>
-            <li>
-                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
-            </li>
-        </ul>
-           <div id="hideSwitcher">&times;</div>
-    </div>
-</div>
-<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
-<!-- Live Style Switcher Ends - demo only -->
-<!-- Header Starts -->
-<header class="header" id="navbar-collapse-toggle">
-    <!-- Fixed Navigation Starts -->
-    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
-        <li class="icon-box active">
-            <i class="fa fa-home"></i>
-            <a href="index.html">
-                <h2>Home</h2>
-            </a>
-        </li>
-        <li class="icon-box">
-            <i class="fa fa-user"></i>
-            <a href="about.html">
-                <h2>About</h2>
-            </a>
-        </li>
-        <!--<li class="icon-box">
-            <i class="fa fa-briefcase"></i>
-            <a href="portfolio.html">
-                <h2>Portfolio</h2>
-            </a>
-        </li>-->
-        <li class="icon-box">
-            <i class="fa fa-envelope-open"></i>
-            <a href="contact.html">
-                <h2>Contact</h2>
-            </a>
-        <!--</li>
-        <li class="icon-box">
-            <i class="fa fa-comments"></i>
-            <a href="blog.html">
-                <h2>Blog</h2>
-            </a>
-        </li>-->
-    </ul>
-    <!-- Fixed Navigation Ends -->
-    <!-- Mobile Menu Starts -->
-    <nav role="navigation" class="d-block d-lg-none">
-        <div id="menuToggle">
-            <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="list-unstyled" id="menu">
-                <li class="active"><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                <!--<li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>-->
-                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                <!--<li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>-->
             </ul>
         </div>
     </nav>
-    <!-- Mobile Menu Ends -->
-</header>
-<!-- Header Ends -->
-<!-- Main Content Starts -->
-<section class="container-fluid main-container container-home p-0 revealator-slideup revealator-once revealator-delay1">
-    <div class="color-block d-none d-lg-block"></div>
-    <div class="row home-details-container align-items-center">
-        <div class="col-lg-4 bg position-fixed d-none d-lg-block"></div>
-        <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
-            <div>
-                <img src="img/pp.jpg" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture" />
-                <h6 class="text-uppercase open-sans-font mb-0 d-block d-sm-none d-lg-block">hi there !</h6>
-                <h1 class="text-uppercase poppins-font"><span>I'm</span> Aayush Shrestha</h1>
-                <p class="open-sans-font">I'm a <b>BCA student</b> currently studying on <a href="http://scst.edu.np">Sagarmatha College</a>.</p>
-                <p class= "open-sans-font"><b>Fun fact:</b> My home country's calendar is <a href="https://nepalicalendar.rat32.com/" rel="nofollow" target="_blank">ahead</a> and my ethnic group's calendar is <a href="https://en.wikipedia.org/wiki/Nepal_Sambat" rel="nofollow" target="_blank">behind</a> the Gregorian calendar, so I'm living in the future, past, and present all at the same time.</p>
-                <a href="about.html" class="btn btn-about">more about me</a>
+    
+    
+    <div class="image-wrapper">
+      <h1><center><font color="Black"><i><i class="fas fa-user"> </i>  About me</i></font></center></h1>
+       <center> <img class="photo" src="me.jpg" ></center><br>
+        <p><center>Hii!<br> I'm <b>Ashna Acharya</b>, a CSIT student passionate about techonology, design and creativity.<br></b>
+        My goal is to pursue my career as Full stack developer and continuously grow in the ever-evolving tech world.<br>  Beyond coding, I enjoy dancing, watching movies, cooking, and traveling. I also love <br>capturing moments—whether it's through recording videos or clicking pictures, creating memories is something I truly value.<br></center></p><br>
+    </div>
+    <div class="container">
+    <div class="left">
+ <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/bi54W9A60AA" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+</iframe><br>
+<a href="https://www.youtube.com/@ASAPIT-"><center> <div class="asap"> ASAPIT :) </div></a></center>
+    </div>
+    <div class="right">
+<p>
+  This YouTube channel was created by me and my friend,<b> Anusha Sharma</b>, with the goal of supporting fellow CSIT students. We share helpful content, tutorials, and tips tailored to your academic and career growth.
+</p>
+<p>
+  We’d love to hear from you! Feel free to suggest video topics or courses you'd like us to create. You can reach out to us using the form below.
+
+</p></div></div>
+<center>
+<h2>Have Suggestions or Questions?</h2>
+<p><center>Feel free to reach out.</center></p>
+
+   <center>
+    <section id="SignUp">   
+  <form class="form-container" action="submit" method="post">
+    
+
+    <div class="form-group">
+      <label for="name">Name <span class="required">*</span></label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="course">Course <span class="required">*</span></label>
+      <select id="course" name="course" required>
+        <option value="">-- Select Course --</option>
+        <option value="BSC.CSIT">BSC.CSIT</option>
+        <option value="BCA">BCA</option>
+        <option value="Others">Others</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="number">Phone Number <span class="required">*</span></label>
+      <input type="text" id="number" name="number" required>
+    </div>
+
+    <div class="form-group">
+      <label>Gender <span class="required">*</span></label>
+      <input type="checkbox" id="male" name="gender" value="Male">
+      <label for="male" style="display: inline;">Male</label>
+      &nbsp;&nbsp;
+      <input type="checkbox" id="female" name="gender" value="Female">
+      <label for="female" style="display: inline;">Female</label>
+    </div>
+
+    <div class="form-group" style="text-align: center;">
+      <input type="submit" value="Submit">
+    </div></center>
+  </form><br>
+ <section id="Qualifications">
+  <h2><i class="fas fa-graduation-cap"></i> Academic Qualifications</h2>
+  <ul>
+    <li><i class="fas fa-university"></i> <strong>B.Sc. CSIT</strong> – Tribhuvan University (2023–Present)</li><br>
+    <li><i class="fas fa-school"></i> <strong>+2 Science</strong> – Little Angel's College (2021–2023)</li><br>
+    <li><i class="fas fa-school-flag"></i> <strong>SEE</strong> – Little Angel's School (2020)</li><br>
+  </ul>
+</section>
+
+<section id="Skills">
+  <h4><i class="fas fa-tools"></i> Technical Skills</h4>
+  <ul>
+    <li>
+      <i class="fab fa-html5"></i> HTML,
+      <i class="fab fa-css3-alt"></i> CSS,
+      <i class="fab fa-js-square"></i> JavaScript,
+      <i class="fab fa-python"></i> Python,
+      <i class="fas fa-palette"></i> Canva
+
+    </li>
+  </ul>
+</section>
+<section id="certificates">
+  <h5><i class="fas fa-certificate"></i> Certificates</h5>
+  <ul>
+    <li>
+      <i class="fas fa-laptop-code"></i> <strong>Responsive-web-design</strong> – Free code camp 
+      <a href="image.png" target="_blank">View Certificate</a>
+    </li>
+   <li>
+      <i class="fab fa-python"></i> <strong>Python Basics</strong> –
+      <a href="programiz.png" target="_blank">View Certificate</a><br>
+    </li>
+     <li>
+    <i class="fab fa-aws"></i> <strong>AWS Student Community Day – Organizing Committee</strong> <br>
+    <a href="1.png" target="_blank">View Certificate</a><br>
+  </li>
+  </section>
+    <section id="projects">
+        <h3><i class="fas fa-folder-open"></i>My Projects</h3>
+        <div class="boxes">
+            <div class="box1">
+                <div class="project-tile">
+                    <a href="https://codepen.io/Ashna-Acharya/pen/bGPPQdg">
+                        <img src="img1.png" alt="1">
+                        <p>Learn Oop</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box2">
+                <div class="project-tile">
+                    <a href="https://codepen.io/Ashna-Acharya/pen/MWMMzKV">
+                        <img src="img2.png" alt="2">
+                        <p>Profile Card</p>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- Main Content Ends -->
+        <div class="boxes">
+            <div class="box2">
+                <div class="project-tile">
+                    <a href="https://codepen.io/Ashna-Acharya/pen/OJeeaZm">
+                        <img src="img3.png" alt="3">
+                        <p>Registration Form</p>
+                    </a>
+                </div>
+            </div>
+            <div class="box1">
+                <div class="project-tile">
+                    <a href="https://codepen.io/Ashna-Acharya/pen/WNqqYyM">
+                        <img src="img.png" alt="4">
+                        <p>Tribute to Nelson Mandela</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="boxes">
+          <div class="box1">
+            <div class="project-tile">
+          <a href="https://codepen.io/Ashna-Acharya/pen/yyYXBWR">
+            <img src="image4.png" alt="5">
+            <p>Note generating app</p>
+          </a>
+        </div>
+        </div>
+        <div class="box2">
+        <div class="project-tile">
+          <a href="https://codepen.io/Ashna-Acharya/pen/ZYbyEYP">
+            <img src="imagey.png" alt="6">
+            <p>Apple website clone</p>
+          </a>
+          </div>
+        </div>
+        </div>
+  <section id="virtual-memory-box" style="max-width: 600px; margin: auto; padding: 20px;">
+  <h3><i class="fas fa-box-open"></i> Virtual Memory Box</h3>
 
-<!-- Template JS Files -->
-<script src="js/jquery-3.5.0.min.js"></script>
-<script src="js/styleswitcher.js"></script>
-<script src="js/preloader.min.js"></script>
-<script src="js/fm.revealator.jquery.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/cbpGridGallery.js"></script>
-<script src="js/jquery.hoverdir.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/custom.js"></script>
+  <div class="swiper virtualMemorySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="slider/1.jpg" alt="Memory 1" />
+        
+      </div>
+      <div class="swiper-slide">
+        <img src="slider/m.jpg" alt="Memory 2" />
+        
+      </div>
+      <div class="swiper-slide">
+        <img src="slider/o.jpg" alt="Memory 3" />
+     
+      </div>
+      <div class="swiper-slide">
+        <img src="slider/a.jpg" alt="Memory 3" />
+        
+      </div>
+      <div class="swiper-slide">
+        <img src="slider/b.jpg" alt="Memory 3" />
+       
+      </div>
+      <div class="swiper-slide">
+        <img src="slider/9.jpg" alt="Memory 1" />
+        
+      </div>
+      <div class="swiper-slide">
+        <img src="slider/e.jpg" alt="Memory 2" />
+       
+      </div>
+      <div class="swiper-slide">
+        <img src="slider/l.jpg" alt="Memory 3" />
+        
+      </div>
+      <div class="swiper-slide">
+        <img src="slider/i.jpg" alt="Memory 3" />
+        
+      </div>
+      <div class="swiper-slide">
+        <img src="slider/10.jpg" alt="Memory 3" />
+        
+      </div>
+      <div class="swiper-slide">
+        <img src="slider/s.jpg" alt="Memory 1" />
+        
+      </div>
+      <div class="swiper-slide">
+        <img src="slider/u.jpg" alt="Memory 2" />
+        
+      </div>
+      <div class="swiper-slide">
+        <img src="slider/y.jpg" alt="Memory 3" />
+      
+      </div>
+     
+      
+    </div>
+
+
+    <div class="swiper-pagination"></div>
+
+    
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+
+
+
+</section>
+<br>
+
+
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>Contact Details</h3>
+      <p>
+    <a href="mailto:acharyaashna.11@gmail.com">
+      <i class="fas fa-envelope"></i> : acharyaashna.11@gmail.com
+    </a>
+  </p>
+  <p>
+    <a href="tel:+9779766387090">
+      <i class="fas fa-phone"></i> : +977 9766387090
+    </a>
+  </p>
+  </div>
+    <div class="footer-section">
+      <h3>Follow Me</h3>
+       <ul>
+        <li><a href="https://www.facebook.com/ashna.acharya.5"><i class="fab fa-facebook"> :  Facebook</i></a></li><br>
+        <li><a href="https://www.instagram.com/_._ashna_/?__pwa=1"><i class="fab fa-instagram"> : Instagram</i></a></li><br>
+        <li><a href="https://www.linkedin.com/in/ashna-acharya-5497242a5/"><i class="fab fa-linkedin"> : Linkedin</i></a></li><br>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const virtualMemorySwiper = new Swiper(".virtualMemorySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 400,
+        disableOnInteraction: false,
+      },
+    });
+  });
+</script>
 
 </body>
 
