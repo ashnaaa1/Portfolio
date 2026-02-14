@@ -1,38 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Message</title>
-  <link rel="stylesheet" href="sty.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Righteous&family=Staatliches&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Message Box - Contact Me</title>
 </head>
 <body>
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo"><a href="index.html">ASHNA</a></div>
+            <ul>
+                <li><a href="index.html#About">Home</a></li>
+                <li><a href="index.html#Qualifications">Qualifications</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="./message.html">Message-box</a></li>
+            </ul>
+        </div>
+    </nav>
 
-<section id="Message">
-  <h2>Have Suggestions or Questions?</h2>
-  <p>Feel free to reach out.</p>
+    <section id="contact-section">
+        <div class="form-container">
+            <h2><i class="fas fa-envelope"></i> Send me a Message</h2>
+            <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+                Feel free to reach out! I'd love to hear from you.
+            </p>
+            
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
 
-  <form class="form-container">
-    <div class="form-group">
-      <label>Name *</label>
-      <input type="text" required>
-    </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
 
-    <div class="form-group">
-      <label>Message *</label>
-      <input type="text" required>
-    </div>
+                <div class="form-group">
+                    <label for="subject"><i class="fas fa-tag"></i> Subject</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Message subject">
+                </div>
 
-    <div class="form-group">
-      <label>Phone Number</label>
-      <input type="text">
-    </div>
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment"></i> Your Message</label>
+                    <textarea id="message" name="message" required placeholder="Write your message here..." rows="6"></textarea>
+                </div>
 
-    <div class="form-group">
-      <input type="submit" value="Submit">
-    </div>
-  </form>
-</section>
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </section>
 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Contact Details</h3>
+                <p>
+                    <a href="mailto:acharyaashna.11@gmail.com">
+                        <i class="fas fa-envelope"></i> : acharyaashna.11@gmail.com
+                    </a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Me</h3>
+                <a href="https://www.facebook.com/ashna.acharya.5"><i class="fab fa-facebook"></i> : Facebook</a>
+                <a href="https://www.instagram.com/_._ashna_/?__pwa=1"><i class="fab fa-instagram"></i> : Instagram</a>
+                <a href="https://www.linkedin.com/in/ashna-acharya-5497242a5/"><i class="fab fa-linkedin"></i> : LinkedIn</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
+
