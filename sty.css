@@ -311,10 +311,13 @@
             border-radius: 5px;
             font-size: 0.9rem;
             margin-left: 1rem;
+            display: inline-block;
+            transition: all 0.3s ease;
         }
         
         #certificates a:hover {
             box-shadow: 0 5px 15px rgba(107, 4, 135, 0.2);
+            transform: translateY(-2px);
         }
         
         /* Projects Section */
@@ -539,6 +542,27 @@
                 max-width: 100%;
                 width: 100%;
             }
+
+            #Qualifications, #Skills, #certificates {
+                padding: 2rem 1.5rem;
+                margin: 2rem auto;
+            }
+
+            #certificates li {
+                padding: 0.8rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.8rem;
+            }
+
+            #certificates a {
+                margin-left: 0;
+                width: 100%;
+                text-align: center;
+                padding: 0.7rem 1rem;
+                font-size: 0.95rem;
+            }
             
             .footer-container {
                 flex-direction: column;
@@ -603,6 +627,20 @@
 
             h2 {
                 font-size: 1.5rem;
+            }
+
+            #Qualifications, #Skills, #certificates {
+                padding: 1.5rem 1rem;
+            }
+
+            #certificates li {
+                padding: 0.6rem;
+                font-size: 0.9rem;
+            }
+
+            #certificates a {
+                padding: 0.6rem 0.8rem;
+                font-size: 0.9rem;
             }
 
             .swiper {
