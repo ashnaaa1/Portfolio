@@ -29,7 +29,7 @@
                 Feel free to reach out! I'd love to hear from you.
             </p>
             
-            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <form id="messageForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                 <div class="form-group">
                     <label for="name"><i class="fas fa-user"></i> Your Name</label>
                     <input type="text" id="name" name="name" required placeholder="Enter your name">
@@ -73,6 +73,20 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.getElementById('messageForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+           
+            alert('Thank you for the suggestion! 🙏');
+            
+           
+            this.reset();
+            
+           
+        });
+    </script>
 </body>
 </html>
 
